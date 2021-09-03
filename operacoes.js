@@ -23,4 +23,11 @@ router.post('/divisao', (req, res) => {
     return res.send({resultado: divisao.toString()});
 })
 
+router.post('/mutiplicacao', (req, res) => {
+    const {num1, num2} = req.body;
+    const mutiplicacao = (num1*1)*(num2*1);
+
+    return res.send({resultado: mutiplicacao.toString()});
+})
+
 module.exports = router;

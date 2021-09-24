@@ -5,7 +5,7 @@ const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false}));
-app.use('/operacoes', router);
+app.use('/operacoes', router);;
 
 app.all('/', (req, res) => {
     return res.send({message: "ok"});
